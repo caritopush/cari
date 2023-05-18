@@ -29,11 +29,16 @@
 <div>
     <img id="imagen" src="../cari/chilaquil.png" alt="perro" width="250px">
     <button onclick="cambiarAtributo()">Cambiar imagen</button>
-    <button onclick="cambiarAtributo()">Regresar imagen</button>
+    <button onclick="cambiarAtributo2()">Regresar imagen</button>
 </div>
 <script>
     function cambiarAtributo() {
         document.getElementById("imagen").src = "../cari/gato.png";
+    }
+</script>
+<script>
+    function cambiarAtributo2() {
+        document.getElementById("imagen").src = "../cari/chilaquil.png";
     }
 </script>
 <H2><marquee direction="up">TABLA INTEGRANTES</marquee></H2>
@@ -54,6 +59,16 @@
         <td> 18 </td>
         <td><a href="integrantes/20223tn100.html"> 20223tn100.html </a></td>
     </tr>
+<div>
+   <h2 id="mensaje">¡Hola mundo!</h2>
+   <button onclick="ocultarMensaje()">Ocultar mensaje</button>
+</div>
+<script>
+function ocultarMensaje() {
+    var elementoH2 = document.getElementById("mensaje");
+    elementoH2.style.display = "none";
+  }
+</script>
 </table>
 </html>
 <br><br>
