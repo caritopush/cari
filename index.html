@@ -15,10 +15,28 @@
     <INPUT TYPE="button" VALUE="GRIS" onClick="sfondo('GRAY')">
     <INPUT TYPE="button" VALUE="AMARILLO" onClick="sfondo('YELLOW')">
     <INPUT TYPE="button" VALUE="BLANCO" onClick="sfondo('WHITE')">
-    </FORM>
+    </FORM></CENTER>
 <br>
+<div><CENTER>
+    <p id="texto">ARRIBA LAS ÁGUILAS</p>
+    <button onclick="cambiarTexto()">Cambiar</button>
+</div>
+<script>
+    function cambiarTexto() {
+        document.getElementById("texto").innerHTML = "ES COTO <strong>ARRIBA BTS</strong>";
+    }
+</script></CENTER>
+<div>
+    <img id="imagen" src="../cari/chilaquil.png" alt="perro" width="250px">
+    <button onclick="cambiarAtributo()">Cambiar imagen</button>
+    <button onclick="cambiarAtributo()">Regresar imagen</button>
+</div>
+<script>
+    function cambiarAtributo() {
+        document.getElementById("imagen").src = "../cari/gato.png";
+    }
+</script>
 <H2><marquee direction="up">TABLA INTEGRANTES</marquee></H2>
-<br>
 <ol>
     <h3> Integrantes </h3>
     <li> Carolina Miranda Bailón </li>
