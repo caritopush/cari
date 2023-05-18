@@ -26,6 +26,7 @@
         document.getElementById("texto").innerHTML = "ES COTO <strong>ARRIBA BTS</strong>";
     }
 </script></CENTER>
+<br>
 <div>
     <img id="imagen" src="../cari/chilaquil.png" alt="perro" width="250px">
     <button onclick="cambiarAtributo()">Cambiar imagen</button>
@@ -70,6 +71,18 @@ function ocultarMensaje() {
   }
 </script>
 </table>
+<br>
+<div>
+    <button onclick="escribirTexto()">Generar texto</button>
+    <div id="miDiv"></div>
+</div>
+<script>
+    function escribirTexto() {
+        var div = document.getElementById('miDiv');
+        var mensaje = "Este texto no lo escribió Carolina, lo escribió JavaScript :)";
+        div.innerHTML = "<h1>" + mensaje + "</h1>";
+    }
+</script>
 </html>
-<br><br>
+<br>
 <a href="../cari/404.html"> PAGINA ERROR </a>
