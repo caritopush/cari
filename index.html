@@ -27,6 +27,65 @@
     }
 </script></CENTER>
 <br>
+<div><CENTER>
+    <button onclick="antes()">Regresar Imagen</button>
+    <button onclick="despues()">Siguiente Imagen</button>
+</div>
+<script>
+    var cont = 0;
+    function despues(){
+        var arreglo=["imagen1.png", "imagen2.png", "imagen3.png", "imagen4.png", "imagen5.png"];
+        var imagen=document.getElementById("img2");
+        if(cont == 4){
+            cont=0;
+        }else{
+            cont=cont+1;
+        }
+        imagen.src=arreglo[cont];
+    }
+    function antes(){
+        var arreglo=["imagen1.png", "imagen2.png", "imagen3.png", "imagen4.png", "imagen5.png"];
+        var imagen=document.getElementById("img2");
+        if(cont == 0){
+            cont = 4;
+        }else{
+            cont=cont+1;
+        imagen.src=arreglo[cont];
+        }
+    }
+</script>
+<h1>
+    <CENTER> TRABAJO 6 </CENTER>
+    </h1>
+    <div><CENTER>
+        <img id="imagen" src="../cari/imagen1.png" alt="1" width="250px">
+        <br><br>
+        <button onclick="antes()">Regresar Imagen</button>
+        <button onclick="despues()">Siguiente Imagen</button>
+    </div>
+    <script>
+        var cont = 0;
+        function despues(){
+            var arreglo=["imagen1.png", "imagen2.png", "imagen3.png", "imagen4.png", "imagen5.png"];
+            var imagen=document.getElementById("imagen");
+            if(cont == 4){
+                cont=0;
+            }else{
+                cont=cont+1;
+            }
+            imagen.src=arreglo[cont];
+        }
+        function antes(){
+            var arreglo=["imagen1.png", "imagen2.png", "imagen3.png", "imagen4.png", "imagen5.png"];
+            var imagen=document.getElementById("imagen");
+            if(cont == 0){
+                cont = 4;
+            }else{
+                cont=cont-1;
+            imagen.src=arreglo[cont];
+            }
+        }
+</script>
 <div>
     <img id="imagen" src="../cari/chilaquil.png" alt="perro" width="250px">
     <button onclick="cambiarAtributo()">Cambiar imagen</button>
